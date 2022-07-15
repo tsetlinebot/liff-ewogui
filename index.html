@@ -1,21 +1,42 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover">
-<title>LIFF: LINE Front-end Framework</title>
-</head>
-<body id="body">
-  <section id="profile">
-    <img id="pictureUrl" src="https://mokmoon.com/images/ic_liff.png">         
-    <p id="userId"></p>
-    <p id="displayName"></p>
-    <p id="statusMessage"></p>
-    <p id="email"></p>
-  </section>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover"
+    />
+    <title>LIFF: LINE Front-end Framework</title>
+  </head>
+  <body id="body">
+    <div
+      class="line-it-button"
+      data-lang="en"
+      data-type="share-a"
+      data-env="REAL"
+      data-url="https://developers.line.biz/en/docs/line-social-plugins/install-guide/using-line-share-buttons/"
+      data-color="grey"
+      data-size="large"
+      data-count="true"
+      data-ver="3"
+      style="display: none"
+    ></div>
+    <script
+      src="https://www.line-website.com/social-plugins/js/thirdparty/loader.min.js"
+      async="async"
+      defer="defer"
+    ></script>
 
-  <section id="button">
-    <button id="btnShare">Share Message</button>
-  </section>
-</body>
+    <section id="profile">
+      <img id="pictureUrl" src="https://mokmoon.com/images/ic_liff.png" />
+      <p id="userId"></p>
+      <p id="displayName"></p>
+      <p id="statusMessage"></p>
+      <p id="email"></p>
+    </section>
+
+    <section id="button">
+      <button id="btnShare">Share Message</button>
+    </section>
+  </body>
 </html>
